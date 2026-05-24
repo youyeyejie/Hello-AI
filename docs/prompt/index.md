@@ -64,10 +64,6 @@ flowchart LR
 | [让模型稳定输出](stable-output.md) | 同样的 Prompt，为什么每次结果不一样？怎么让它更稳定？ | 需要可复现结果的人 |
 | [Prompt 常见失败案例](failure-cases.md) | 哪些写法一定会踩坑？出了问题怎么排查？ | 已经写过一些 Prompt 的人 |
 
-!!! note "关于占位页面"
-
-    目前 `structure.md`、`tasks.md`、`templates.md`、`stable-output.md`、`failure-cases.md` 还是占位页，内容正在陆续补充中。你可以先跳过它们，或者看看占位页里的建议内容，了解每个主题的大致方向。
-
 ## 推荐阅读顺序
 
 我们设计了两条学习路径，你可以根据自己的情况选择。
