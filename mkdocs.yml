@@ -119,7 +119,7 @@ nav:
       - 让模型稳定输出: prompt/stable-output.md
       - 总结、改写、分类与抽取: prompt/tasks.md
       - Prompt 常见失败案例: prompt/failure-cases.md
-  - 工具使用:
+  - AI 工具使用:
       - 工具总览: tools/index.md
       - Chat 类产品怎么用: tools/chat-products.md
       - 如何选择模型: tools/model-selection.md
@@ -143,20 +143,20 @@ nav:
       - 任务拆解: agent/task-planning.md
       - 反思与循环: agent/reflection-loop.md
       - Agent 常见失败模式: agent/failure-patterns.md
-  - 构建实战:
+  - AI Build 实战:
       - Build 总览: build/index.md
       - API 接入: build/api-integration.md
       - 最小 AI 应用: build/simple-app.md
       - 本地模型: build/local-models.md
       - 部署入门: build/deployment.md
       - Docker 基础: build/docker.md
-  - 评测:
+  - AI Evals:
       - Eval 总览: eval/index.md
       - 主观与客观指标: eval/metrics.md
       - 幻觉评测: eval/hallucination.md
       - 输出质量判断: eval/quality.md
       - 简单评测: eval/simple-eval.md
-  - 安全:
+  - AI与大模型安全:
       - Safety 总览: safety/index.md
       - 数据泄露: safety/data-leakage.md
       - 提示注入: safety/prompt-injection.md
@@ -167,7 +167,7 @@ nav:
       - Prompt 改写: lab/prompt-rewrite.md
       - RAG 基础: lab/rag-basics.md
       - Agent 拆解: lab/agent-basics.md
-  - 资源:
+  - 相关资源:
       - 资源总览: resources/index.md
       - 模型平台: resources/models.md
       - API 平台: resources/apis.md
