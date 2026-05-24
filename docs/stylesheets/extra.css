@@ -11,3 +11,11 @@
 .md-typeset details {
   border-radius: 0.5rem;
 }
+
+.md-typeset .task-list-item input {
+  top: 0.2em;
+}
+
+.md-content__inner > p:first-of-type {
+  font-size: 1.05rem;
+}
