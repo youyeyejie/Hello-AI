@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -30,14 +33,24 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install dependencies
-        run: python -m pip install -r requirements.txt
+        run: |
+          python -m pip install -r requirements.txt
+          npm install -g @mermaid-js/mermaid-cli@11.15.0
 
       - name: Show tool versions
         run: |
           python --version
           python -m pip --version
           python -m mkdocs --version
+          node --version
+          npm --version
+          mmdc --version
 
       - name: Validate helper scripts
         run: |
@@ -51,6 +64,7 @@ jobs:
           python -m mkdocs build --strict --verbose 2>&1 | tee mkdocs-build.log
 
       - name: Upload Pages artifact
+        if: ${{ github.event_name != 'pull_request' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
@@ -64,6 +78,7 @@ jobs:
 
   deploy:
     needs: build
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
